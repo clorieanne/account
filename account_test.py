@@ -37,9 +37,18 @@ class BankTest(unittest.TestCase):
 
     account_2 = Account(002, 100)
 
-    bank.withdraw_account(002, 50)
+    bank.withdraw_account(account_2, 50)
 
-    self.assertEqual(bank.get_account_balance(001), 50) 
+    self.assertEqual(bank.get_account_balance(002), 50) 
+    
+    
+  def test_account_exist(self):
+    bank = Bank()
+    account_1 = Account(001, 50)
+    bank.add_account(account_1)
+    self.assertEqual(bank.account_exist(account1), True)
+    
+    
   
 
 
