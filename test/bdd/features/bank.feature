@@ -12,7 +12,9 @@ Feature: Bank web application to retrieve
 	 Then I see a balance of "50"
 	 
 	 Scenario Outline: Retrieve customer balance 
-	 Given I create account "<account_number>" with balance of "<balance>" 
+	 Given I create the following account: 
+	    |account_number  |balance |
+	    |1111	     |50      |
 	 And I visit the homepage
-	 When I enter the account number "<account_number>"
-	 Then I see a balance of "<balance>"
+	 When I enter the account number "1111"
+	 Then I see a balance of "50"
