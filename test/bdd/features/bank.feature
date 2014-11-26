@@ -10,3 +10,9 @@ Feature: Bank web application to retrieve
 	 And I visit the homepage
 	 When I enter the account number "1111"
 	 Then I see a balance of "50"
+	 
+	 Scenario Outline: Retrieve customer balance 
+	 Given I create account "<account_number>" with balance of "<balance>" 
+	 And I visit the homepage
+	 When I enter the account number "<account_number>"
+	 Then I see a balance of "<balance>"
