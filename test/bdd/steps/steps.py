@@ -20,7 +20,7 @@ def i_visit_the_homepage(step):
 
 @step(u'I enter the account number "([^"]*)"')
 def when_i_enter_the_account_number_group1(step, account_number):
-    form = world.response.forms['accountform']
+    form = world.response.forms['account-form']
     form['account_number'] = account_number
     world.form_response = form.submit()
     assert_equal(world.form_response.status_code, 200)
@@ -41,3 +41,4 @@ def i_create_the_following_account(step):
     for row in step.hashes:
         a = Account(row['account_number'], row['balance'])
         BANK.add_account(a)
+
