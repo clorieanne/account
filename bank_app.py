@@ -5,10 +5,10 @@ from flask import Flask, render_template, request
 from bank.bank import Bank
 from bank.account import Account
 
-APP = Flask(__name__)
+app = Flask(__name__)
 BANK = Bank()
 
-@APP.route('/')
+@app.route('/')
 def hello_world():
     """function"""
     account_number = request.args.get('account_number')
@@ -19,4 +19,4 @@ if __name__ == '__main__':
     import cProfile
     ACCOUNT = Account('1111', 50)
     BANK.add_account(ACCOUNT)
-    cProfile.run('APP.run(debug = True)', sort='time')
+    cProfile.run('app.run(debug = True)', sort='time')
