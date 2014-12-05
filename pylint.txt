@@ -1,0 +1,149 @@
+************* Module bank
+bank/__init__.py:1:[C0111(missing-docstring), ] Missing module docstring
+************* Module bank.account
+bank/account.py:2:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/account.py:3:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/account.py:4:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/account.py:7:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/account.py:7:[C0326(bad-whitespace), ] No space allowed after bracket
+  def __init__( self, account_number,balance,withdraw):
+              ^
+bank/account.py:7:[C0326(bad-whitespace), ] Exactly one space required after comma
+  def __init__( self, account_number,balance,withdraw):
+                                    ^
+bank/account.py:7:[C0326(bad-whitespace), ] Exactly one space required after comma
+  def __init__( self, account_number,balance,withdraw):
+                                            ^
+bank/account.py:8:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/account.py:1:[C0111(missing-docstring), ] Missing module docstring
+bank/account.py:1:[C0111(missing-docstring), Account] Missing class docstring
+bank/account.py:1:[R0903(too-few-public-methods), Account] Too few public methods (0/2)
+bank/account.py:6:[C0111(missing-docstring), Withdraws] Missing class docstring
+bank/account.py:7:[W0613(unused-argument), Withdraws.__init__] Unused argument 'account_number'
+bank/account.py:6:[R0903(too-few-public-methods), Withdraws] Too few public methods (0/2)
+************* Module bank.bank
+bank/bank.py:2:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/bank.py:3:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/bank.py:5:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/bank.py:6:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/bank.py:8:[C0303(trailing-whitespace), ] Trailing whitespace
+bank/bank.py:8:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/bank.py:9:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/bank.py:11:[W0311(bad-indentation), ] Bad indentation. Found 2 spaces, expected 4
+bank/bank.py:12:[W0311(bad-indentation), ] Bad indentation. Found 4 spaces, expected 8
+bank/bank.py:1:[C0111(missing-docstring), ] Missing module docstring
+bank/bank.py:1:[C0111(missing-docstring), Bank] Missing class docstring
+bank/bank.py:5:[C0111(missing-docstring), Bank.add_account] Missing method docstring
+bank/bank.py:8:[C0111(missing-docstring), Bank.get_account_balance] Missing method docstring
+bank/bank.py:11:[C0111(missing-docstring), Bank.account_exist] Missing method docstring
+bank/bank.py:12:[W0106(expression-not-assigned), Bank.account_exist] Expression "self.accounts.get(account_number) != 'None'" is assigned to nothing
+
+
+Report
+======
+17 statements analysed.
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |18     |94.74 |18       |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|empty     |1      |5.26  |1        |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |13     |13       |=          |
++-----------+-------+---------+-----------+
+|refactor   |2      |2        |=          |
++-----------+-------+---------+-----------+
+|warning    |15     |15       |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-------------+------+--------+---------+-----------+
+|module       |error |warning |refactor |convention |
++=============+======+========+=========+===========+
+|bank.bank    |0.00  |60.00   |0.00     |46.15      |
++-------------+------+--------+---------+-----------+
+|bank.account |0.00  |40.00   |100.00   |46.15      |
++-------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|bad-indentation         |13          |
++------------------------+------------+
+|missing-docstring       |9           |
++------------------------+------------+
+|bad-whitespace          |3           |
++------------------------+------------+
+|too-few-public-methods  |2           |
++------------------------+------------+
+|unused-argument         |1           |
++------------------------+------------+
+|trailing-whitespace     |1           |
++------------------------+------------+
+|expression-not-assigned |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -7.65/10 (previous run: -7.65/10, +0.00)
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |3      |3          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |3      |3          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |6      |6          |=          |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+

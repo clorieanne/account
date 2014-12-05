@@ -12,8 +12,8 @@ Feature: Bank web application to retrieve
 	| account_number | balance |
 	| 1111	 		 | 50      |
 	And I visit the homepage
-	When I enter the account number "2222"
-	Then I see a balance of "100"
+	When I enter the account number "1111"
+	Then I see a balance of "50"
 
      
      
