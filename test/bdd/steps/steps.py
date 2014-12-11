@@ -42,3 +42,4 @@ def i_create_the_following_account(step):
         a = Account(row['account_number'], row['balance'])
         BANK.add_account(a)
 
+@step

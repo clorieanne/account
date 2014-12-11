@@ -3,7 +3,7 @@ my mod
 """
 from flask import Flask, render_template, request
 from bank.bank import Bank
-from bank.account import Account
+from account.bank.account import Account
 
 app = Flask(__name__)
 BANK = Bank()
