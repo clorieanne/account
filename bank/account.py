@@ -6,5 +6,5 @@ class Account(object):
 
 class Withdraws(object):
     """For withdraws"""
-    def __init__(self, balance, withdraw): #pragma: no cover
+    def __init__(self, account_number, balance, withdraw): #pragma: no cover
       self.balance = balance - withdraw
