@@ -12,7 +12,8 @@ class TestAccount(unittest.TestCase):
     self.assertEqual(account.balance, 50)
  
   def test_withdraw(self):
-    account = Withdraws("001", 50, 20)
+    account = Account("001", 50)
+    account = Withdraws(account.balance, 20)
     self.assertEqual(account.balance, 30)
 
   def test_get_balance(self):
