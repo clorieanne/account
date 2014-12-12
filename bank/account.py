@@ -1,3 +1,4 @@
+"""Account and Withdraw Classes"""
 class Account(object):
     """Initialize"""
     def __init__(self, account_number, balance):
@@ -6,5 +7,5 @@ class Account(object):
 
 class Withdraws(object):
     """For withdraws"""
-    def __init__(self, account_number, balance, withdraw):
+    def __init__(self, balance, withdraw):
         self.balance = balance - withdraw
