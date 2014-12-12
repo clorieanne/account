@@ -1,10 +1,10 @@
 class Account(object):
     """Initialize"""
-    def __init__(self, account_number, balance): #pragma: no cover
-      self.account_number = account_number
-      self.balance = balance
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
 
 class Withdraws(object):
     """For withdraws"""
-    def __init__(self, account_number, balance, withdraw): #pragma: no cover
-      self.balance = balance - withdraw
+    def __init__(self, account_number, balance, withdraw):
+        self.balance = balance - withdraw
