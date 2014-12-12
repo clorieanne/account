@@ -23,7 +23,7 @@ class BankTest(unittest.TestCase):
     bank = Bank()
     account_1 = Account(001, 50)
     bank.add_account(account_1)
-    self.assertEqual(bank.account_exist(001), None)
+    self.assertEqual(bank.account_exist(001), True)
     
 
  
